@@ -1,0 +1,11 @@
+profitbase:
+  target: local
+  outputs:
+    local:
+      type: clickhouse
+      schema: "{{ env_var('LOCAL_DB') }}"
+      host: "{{ env_var('LOCAL_HOST') }}"
+      port: "{{ env_var('LOCAL_PORT') | as_number }}"
+      user: "{{ env_var('LOCAL_USER') }}"
+      password: "{{ env_var('LOCAL_PASSWORD') }}"
+      secure: False
