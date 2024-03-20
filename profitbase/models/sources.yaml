@@ -1,0 +1,17 @@
+sources:
+  - name: raw_data
+    schema: "{{ env_var('LOCAL_DB') }}"
+    description: ''
+    tables:
+      - name: manager_departments
+        description: ' '
+      - name: payments
+        description: ' '
+
+
+
+
+
+
+
+

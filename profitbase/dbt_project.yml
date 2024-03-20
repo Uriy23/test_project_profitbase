@@ -22,5 +22,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   profitbase:
-    example:
-      +materialized: view
+    data:
+      +materialized: table
